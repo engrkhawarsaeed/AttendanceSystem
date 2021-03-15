@@ -10,6 +10,16 @@ namespace AttendanceSystem.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Title = "Khawar";
+            ViewData["Title"] = "khawar";
+
+
+            TempData["Title"] = "khawar";
+            return View();
+        }
+
+        public IActionResult Detail(int abc)
+        {
             return View();
         }
     }
